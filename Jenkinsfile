@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'your-bitbucket-credentials-id', url: 'https://bitbucket.org/ananthkannan/myawesomeangularapprepo/']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'your-bitbucket-credentials-id', url: 'https://github.com/NavyaDeveloper/jenkins-git-dokerhub.git']]])
             }
         }
 
